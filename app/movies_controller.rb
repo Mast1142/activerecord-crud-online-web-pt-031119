@@ -70,6 +70,7 @@ def can_be_found_updated_and_saved
   Movie.create(title: "Awesome Flick")
   m = Movie.find_by(title: "Awesome Flick")
   m.title = "Even Awesomer Flick"
+  m.save
   binding.pry
 
 
